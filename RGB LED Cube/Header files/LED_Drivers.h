@@ -10,13 +10,12 @@
 #define LED_DRIVERS_H_
 
 #include <avr/io.h>
-
-#define OE (1 << PC4)		//output enable pin
-#define LE (1 << PC5)		//latch enable pin
-#define DRIVERS_AMOUNT 24	//amount of drivers in cascade
+#include "../Header files/Pinout.h"
+#include "../Header files/Display.h"
 
 void LED_DriversInit(void);
 void LED_DriversLatch(void);
 void LED_DriversEnable(void);
+void LED_DriversDisable(void);
 
 #endif /* LED_DRIVERS_H_ */

@@ -10,11 +10,8 @@
 #define SPI_H_
 
 #include <avr/io.h>
-
-#define SS (1 << PB2)
-#define MISO (1 << PB4)
-#define MOSI (1 << PB3)
-#define SCK (1 << PB5)
+#include "../Header files/Pinout.h"
+#include "../Header files/LED_Drivers.h"
 
 void SPI_Init(void);
 void SPI_MasterTransmit(uint8_t cData);

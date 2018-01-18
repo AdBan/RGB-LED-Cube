@@ -9,8 +9,8 @@
 
 void SPI_Init(void)
 {
-	DDRB |= SS | MOSI | SCK;	//SS, MOSI and SCK as output
-	DDRB &= ~MISO;				//MISO as input
+	DDR_SPI |= SS | MOSI | SCK;			//SS, MOSI and SCK as output
+	DDR_SPI &= ~MISO;					//MISO as input
 	
 	SPCR |= (1 << SPE) | (1 << MSTR);	//enable SPI in master mode
 	SPSR |= (SPI2X);					//double SPI speed to fosc/2

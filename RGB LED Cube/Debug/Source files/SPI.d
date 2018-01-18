@@ -10,7 +10,26 @@ Source files/SPI.d Source files/SPI.o: ../Source\ files/SPI.c \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\common.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\version.h \
  c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\fuse.h \
- c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\lock.h
+ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\lock.h \
+ ../Source\ files/../Header\ files/../Header\ files/Pinout.h \
+ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\interrupt.h \
+ ../Source\ files/../Header\ files/../Header\ files/LED_Drivers.h \
+ ../Source\ files/../Header\ files/../Header\ files/../Header\ files/Pinout.h \
+ ../Source\ files/../Header\ files/../Header\ files/../Header\ files/Display.h \
+ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h \
+ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay_basic.h \
+ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\math.h \
+ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\string.h \
+ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\gcc\avr\5.4.0\include\stddef.h \
+ c:\users\adam\documents\github\rgb\ led\ cube\rgb\ led\ cube\header\ files\global.h \
+ c:\users\adam\documents\github\rgb\ led\ cube\rgb\ led\ cube\header\ files\pinout.h \
+ c:\users\adam\documents\github\rgb\ led\ cube\rgb\ led\ cube\header\ files\multiplexing.h \
+ c:\users\adam\documents\github\rgb\ led\ cube\rgb\ led\ cube\header\ files\global.h \
+ c:\users\adam\documents\github\rgb\ led\ cube\rgb\ led\ cube\header\ files\pinout.h \
+ c:\users\adam\documents\github\rgb\ led\ cube\rgb\ led\ cube\header\ files\display.h \
+ c:\users\adam\documents\github\rgb\ led\ cube\rgb\ led\ cube\header\ files\spi.h \
+ c:\users\adam\documents\github\rgb\ led\ cube\rgb\ led\ cube\header\ files\spi.h \
+ c:\users\adam\documents\github\rgb\ led\ cube\rgb\ led\ cube\header\ files\led_drivers.h
 
 ../Source\ files/../Header\ files/SPI.h:
 
@@ -35,3 +54,41 @@ c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\
 c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\fuse.h:
 
 c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\lock.h:
+
+../Source\ files/../Header\ files/../Header\ files/Pinout.h:
+
+c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\avr\interrupt.h:
+
+../Source\ files/../Header\ files/../Header\ files/LED_Drivers.h:
+
+../Source\ files/../Header\ files/../Header\ files/../Header\ files/Pinout.h:
+
+../Source\ files/../Header\ files/../Header\ files/../Header\ files/Display.h:
+
+c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay.h:
+
+c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\util\delay_basic.h:
+
+c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\math.h:
+
+c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\avr\include\string.h:
+
+c:\program\ files\ (x86)\atmel\studio\7.0\toolchain\avr8\avr8-gnu-toolchain\lib\gcc\avr\5.4.0\include\stddef.h:
+
+c:\users\adam\documents\github\rgb\ led\ cube\rgb\ led\ cube\header\ files\global.h:
+
+c:\users\adam\documents\github\rgb\ led\ cube\rgb\ led\ cube\header\ files\pinout.h:
+
+c:\users\adam\documents\github\rgb\ led\ cube\rgb\ led\ cube\header\ files\multiplexing.h:
+
+c:\users\adam\documents\github\rgb\ led\ cube\rgb\ led\ cube\header\ files\global.h:
+
+c:\users\adam\documents\github\rgb\ led\ cube\rgb\ led\ cube\header\ files\pinout.h:
+
+c:\users\adam\documents\github\rgb\ led\ cube\rgb\ led\ cube\header\ files\display.h:
+
+c:\users\adam\documents\github\rgb\ led\ cube\rgb\ led\ cube\header\ files\spi.h:
+
+c:\users\adam\documents\github\rgb\ led\ cube\rgb\ led\ cube\header\ files\spi.h:
+
+c:\users\adam\documents\github\rgb\ led\ cube\rgb\ led\ cube\header\ files\led_drivers.h:

@@ -10,19 +10,14 @@
 #define DISPLAY_H_
 
 #include <avr/io.h>
-#define F_CPU 8000000UL
+#define F_CPU 20000000UL
 #include <util/delay.h>
 #include <string.h>
+#include "../Header files/Global.h"
+#include "../Header files/Pinout.h"
 #include "../Header files/Multiplexing.h"
 #include "../Header files/SPI.h"
 #include "../Header files/LED_Drivers.h"
-
-typedef struct CubeData
-{
-	uint8_t red[64];
-	uint8_t green[64];
-	uint8_t blue[64];
-}CubeData;
 
 void ClearAll(void);
 void RedAll(void);

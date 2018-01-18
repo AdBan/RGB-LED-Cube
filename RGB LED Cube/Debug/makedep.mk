@@ -12,3 +12,5 @@ Source files\Multiplexing.c
 
 Source files\SPI.c
 
+Source files\UART.c
+
