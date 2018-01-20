@@ -1,16 +1,18 @@
 function sineWave = SineWave(phase)
 %SineWave Creates 8x8 Z-matrix of 3D sine wave
 % USAGE:
-%     for phase = -pi:0.1:pi
-%         Z(:,:,RED) = SineWave(phase);
-%         Z(:,:,GREEN) = SineWave(phase);
-%         Z(:,:,BLUE) = SineWave(phase);
-%         
-%         DiscreteCubeRGB = Z_To_DiscreteCubeRGB(Z);
-%         CubeData = DiscreteCubeRGB_To_CubeData(DiscreteCubeRGB);
-%         PlotZ(X,Y,Z);
-%         SendCubeData(s, CubeData);
-%     end
+%{
+     for phase = -pi:0.1:pi
+         Z(:,:,RED) = SineWave(phase);
+         Z(:,:,GREEN) = SineWave(phase);
+         Z(:,:,BLUE) = SineWave(phase);
+
+         DiscreteCubeRGB = Z_To_DiscreteCubeRGB(Z);
+         CubeData = DiscreteCubeRGB_To_CubeData(DiscreteCubeRGB);
+         PlotZ(X,Y,Z);
+         SendCubeData(s, CubeData);
+     end
+%}
 
     size = 8;
     sineWave = zeros(size, size);
