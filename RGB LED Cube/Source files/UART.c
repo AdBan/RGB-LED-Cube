@@ -55,25 +55,4 @@ ISR(USART_RX_vect)
 		cubeData = UART_cubeData;				//assign UART_cubeData to cubeData which will be displayed in main loop
 		UART_cubeData = (const CubeData) {0};	//reset UART_cubeData
 	}
-	
-	//if (UART_iter < 192)
-	//{
-		//uint8_t modulo = UART_iter % 3;
-		//
-		//if (modulo == 0)
-			//UART_cubeData.red[(UART_iter - modulo)/3] = UDR0;
-		//else if (modulo == 1)
-			//UART_cubeData.green[(UART_iter - modulo)/3] = UDR0;
-		//else if (modulo == 2)
-			//UART_cubeData.blue[(UART_iter - modulo)/3] = UDR0;
-		//
-		//UART_iter++;
-	//}
-	//else
-	//{
-		//UART_iter = 0;
-		//cubeData = UART_cubeData;				//assign UART_cubeData to cubeData which will be displayed in main loop
-		//UART_cubeData = (const CubeData) {0};	//reset UART_cubeData
-		//UART_Transmit(0x11);					//notify master that full cube has been transmitted
-	//}
 }

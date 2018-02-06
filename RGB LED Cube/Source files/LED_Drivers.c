@@ -21,7 +21,6 @@ void LED_DriversLatch(void)
 	PORT_DRIVERS &= ~LE;
 }
 
-
 void LED_DriversEnable(void)
 {
 	PORT_DRIVERS &= ~OE;

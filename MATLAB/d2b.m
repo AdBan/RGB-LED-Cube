@@ -9,7 +9,7 @@ function b = d2b(x)
     
     if (x == 0)
         return;
-    elseif (x == 1)
+    elseif (x == 1 & (sum(sum(x)) == 1))
         b = [0 0 0 0 0 0 0 1];
         return;
     end

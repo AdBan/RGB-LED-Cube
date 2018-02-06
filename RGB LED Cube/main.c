@@ -29,8 +29,8 @@ int main(void)
 	setup();
 	
 	while(1)
-	{		
-		TransmitCubeData(cubeData);
+	{
+		TransmitCubeData(cubeData);		//display cubeData (data is received in UART interrupts)
 	}
 }
 

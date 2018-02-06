@@ -3,16 +3,16 @@ function F = PlotCubeData( CubeData, F )
 
     cla(F);                                     %clear axes before plotting anything            
     RED = 1; GREEN = 2; BLUE = 3;
-    cubeSize = 8;
-    [X,Y] = meshgrid(1:cubeSize, 1:cubeSize);   %grid of cube base dimension (8x8)
+    size = 8;
+    [X,Y] = meshgrid(size:-1:1, 1:size);        %grid of cube base dimension (8x8)
     
     binaryCubeData = d2b(CubeData);             %get binary representation of CubeData
-    
-    for row = 1 : 8
-        plot3(X, Y, binaryCubeData((row-1)*cubeSize + 1 : row * cubeSize, :, RED) * row, 'ro');
-        plot3(X, Y, binaryCubeData((row-1)*cubeSize + 1 : row * cubeSize, :, GREEN) * row, 'gs');
-        plot3(X, Y, binaryCubeData((row-1)*cubeSize + 1 : row * cubeSize, :, BLUE) * row, 'bx');
+    for row = 1 : 8  
+        plot3(X, Y, binaryCubeData((row-1)*size + 1 : row * size, :, RED) * row, 'ro');
+        plot3(X, Y, binaryCubeData((row-1)*size + 1 : row * size, :, GREEN) * row, 'gs');      
+        plot3(X, Y, binaryCubeData((row-1)*size + 1 : row * size, :, BLUE) * row, 'bx');
     end
+    
     drawnow;                                    %update figure
 end
 

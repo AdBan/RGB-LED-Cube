@@ -13,8 +13,7 @@ void AnodesInit(void)
 	DDR_ANODES_H |= A2 | A3 | A4 | A5 | A6 | A7;
 	DDR_ANODES_L |= A0 | A1;
 	//disabled by default
-	PORT_ANODES_H |= A2 | A3 | A4 | A5 | A6 | A7;
-	PORT_ANODES_L |= A0 | A1;
+	DisableAllLevels();
 }
 
 void EnableLevel(uint8_t level)
@@ -55,8 +54,10 @@ void TransmitCubeData(CubeData cubeData)
 			SPI_MasterTransmit(cubeData.red[8*i + j]);
 		
 		DisableAllLevels();
-		EnableLevel(i);
+		LED_DriversDisable();
+		_delay_us(2);		//this delay eliminates "ghost" effect of LED below desired LED (probably caused by switch-off timing parameters of IO pins)
 		LED_DriversLatch();
+		EnableLevel(i);
 		LED_DriversEnable();
 	}
 }

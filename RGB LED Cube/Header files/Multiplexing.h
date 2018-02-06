@@ -16,6 +16,9 @@
 #include "../Header files/SPI.h"
 
 void AnodesInit(void);
-void TransmitCubeData();
+void EnableLevel(uint8_t level);
+void DisableLevel(uint8_t level);
+void DisableAllLevels(void);
+void TransmitCubeData(CubeData cubeData);
 
 #endif /* MULTIPLEXING_H_ */
