@@ -6,6 +6,7 @@ function F = CreateFigure( figNumber, figTitle)
     axis([1 8 1 8 1 8]);
     view([-37.5 30]);
     pbaspect([1 1 1]);
+    cla;
     hold on;
 
 end

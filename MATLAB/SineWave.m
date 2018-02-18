@@ -1,12 +1,12 @@
-function SineWave(serial, figure, plotOn)
+function SineWave(serial, fig, plotOn)
 %SineWave Makes SineWave animation
 
     size = 8;
     sineWave = zeros(size, size);
-    %Z = zeros(size, size, 3);
+    [X,Y] = meshgrid(1:8,1:8);
     RED = 1; GREEN = 2; BLUE = 3;   %color indexes in three dimensional matrixes
     
-    for phase = -10*pi : pi/30 : 10*pi
+    for phase = -5*pi : pi/30 : 5*pi
         if (mod(phase, pi) == 0)
             Z = zeros(size, size, 3);
             colorsMatrix = randi(2,1,3) - 1;
@@ -37,16 +37,36 @@ function SineWave(serial, figure, plotOn)
         
         %if plot is enabled, plot data
         if (plotOn)
-            PlotCubeData(CubeData, figure);
+            %PlotCubeData(CubeData, fig);
+            cla;
+            redChannel = zeros(8,8); greenChannel = zeros(8,8); blueChannel = zeros(8,8);
+            figure(fig);
+            if (colorsMatrix(RED) == true)
+                redChannel = ones(8,8);
+            end
+            if (colorsMatrix(GREEN) == true)
+                greenChannel = ones(8,8);
+            end
+            if (colorsMatrix(BLUE) == true)
+                blueChannel = ones(8,8);
+            end
+            
+            colors = double(cat(3, redChannel, greenChannel, blueChannel));
+            
+            if (sum(sum(sum(Z(:,:,RED)))) > 0)
+                surf(X,Y,Z(:,:,RED), colors);
+            elseif (sum(sum(sum(Z(:,:,GREEN)))) > 0)
+                surf(X,Y,Z(:,:,GREEN), colors);
+            elseif (sum(sum(sum(Z(:,:,BLUE)))) > 0)
+                surf(X,Y,Z(:,:,BLUE), colors);
+            end
+            axis([1 8 1 8 1 8]);
+            axis('square');
+            drawnow;
+        else
+            pause(0.01);
         end
         SendCubeData(serial, CubeData);
-        
-        %if plot is disabled, wait for some time
-        if (~plotOn)
-            pause(0.001);
-        end
     end
-    
-    
 end
 

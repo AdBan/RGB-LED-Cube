@@ -50,13 +50,10 @@ function Enlarge(serial, figure, plotOn)
             %if plot is enabled, plot data
             if (plotOn)
                 PlotCubeData(CubeData, figure);
-            end
-            SendCubeData(serial, CubeData);
-
-            %if plot is disabled, wait for some time
-            if (~plotOn)
+            else
                 pause(0.1);
             end
+            SendCubeData(serial, CubeData);
         end
     end
    
